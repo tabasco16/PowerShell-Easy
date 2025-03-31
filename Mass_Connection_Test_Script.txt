@@ -1,0 +1,9 @@
+$data = Get-Content "C:\## Location Path ##\## Text or Other File ##.txt" 
+$data | ForEach-Object {
+    $result = Test-Connection -ComputerName $_ -Count 1 -ErrorAction SilentlyContinue
+        if ($result) {
+            Write-Host "$_ is Responsive" -ForegroundColor Green
+        } else {
+            Write-Host "$_ is Unresponsive" -ForegroundColor Red
+        }
+    }

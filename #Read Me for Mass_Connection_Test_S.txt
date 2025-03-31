@@ -1,0 +1,8 @@
+#Read Me for Mass_Connection_Test_Script.txt
+
+1. Create a list of IPs/DNS/Addresses, etc.... (one entry per line)
+2. Name it and place it in location
+3. Edit Script .txt file with accurate file name and file path
+4. Throw it in PowerShell
+5. Run
+6. Profit
